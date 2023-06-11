@@ -1,0 +1,42 @@
+{
+    "comment:header": {
+        "scope": "shellscript",
+        "prefix": "comment:header",
+        "body": [
+            "#######################################",
+            "# File:",
+            "#   <filename>",
+            "# Description:",
+            "#   <description>",
+            "# Globals:",
+            "#   <global variables>",
+            "# Arguments:",
+            "#   <argument>",
+            "# Outputs:",
+            "#   <outputs>",
+            "# Returns:",
+            "#   <retuen code>: <description>",
+            "#######################################",
+        ],
+        "description": "insert header comment"
+    },
+    "comment:function": {
+        "scope": "shellscript",
+        "prefix": "comment:function",
+        "body": [
+            "#######################################",
+            "# Description:",
+            "#   <description>",
+            "# Globals:",
+            "#   <using global variables>",
+            "# Arguments:",
+            "#   <argument>",
+            "# Outputs:",
+            "#   <outputs>",
+            "# Returns:",
+            "#   <retuen code>: <description>",
+            "#######################################",
+        ],
+        "description": "insert function comment"
+    },
+}

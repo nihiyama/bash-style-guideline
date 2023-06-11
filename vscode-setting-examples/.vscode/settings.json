@@ -1,0 +1,9 @@
+{
+    "[shellscript]": {
+        "files.eol": "\n",
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    }
+}
