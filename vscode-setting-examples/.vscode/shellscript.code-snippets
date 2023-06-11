@@ -1,5 +1,21 @@
 {
-    "comment:header": {
+    "trap handle error": {
+        "scope": "shellscript",
+        "prefix": "trap-error",
+        "body": [
+            "trap 'handle_error \\${LINENO} \\${LOGFILE};' ERR"
+        ],
+        "description": "insert trap error"
+    },
+    "set -Eoue pipefail": {
+        "scope": "shellscript",
+        "prefix": "set-Eeuo-pipefail",
+        "body": [
+            "set -Eeuo pipefail"
+        ],
+        "description": "insert set set -Eeuo pipefail"
+    },
+    "comment header": {
         "scope": "shellscript",
         "prefix": "comment:header",
         "body": [
@@ -20,7 +36,7 @@
         ],
         "description": "insert header comment"
     },
-    "comment:function": {
+    "comment function": {
         "scope": "shellscript",
         "prefix": "comment:function",
         "body": [
