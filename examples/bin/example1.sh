@@ -20,7 +20,8 @@
 set -Eeuo pipefail
 
 # globals
-PARENT_DIRNAME="$(dirname "$(dirname "$0")")"
+DIRNAME="$(dirname "$0")"
+PARENT_DIRNAME="$(dirname "${DIRNAME}}")"
 BASE_FILENAME="$(basename "$0" .sh)"
 LOGFILE="${PARENT_DIRNAME}/log/${BASE_FILENAME}.log"
 
