@@ -28,7 +28,7 @@
 # Returns:
 #   <retuen code>: <description>
 #######################################
-function _logger() {
+function logger() {
   local error_level="$1"
   local message="$2"
   local lineno="$3"
@@ -36,6 +36,7 @@ function _logger() {
 
   local dt
   dt="$(date --iso-8601=seconds)"
+  command logger -sp
 
   echo -e "${dt}\t[${error_level}]\t${message}\t${lineno}" >>"${logfile}"
 }
@@ -75,7 +76,7 @@ function logger_warning() {
   local message="$1"
   local lineno="$2"
   local logfile="$3"
-  _logger "warning" "${message}" "${lineno}" "${logfile}"
+  logger "warning" "${message}" "${lineno}" "${logfile}"
 }
 
 #######################################
